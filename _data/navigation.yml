@@ -13,6 +13,9 @@
 - name: Experience
   link: #experience
   section: experience
+- name: Blog
+  link: #blog
+  section: blog
 - name: Contact
   link: #contact
   section: contact

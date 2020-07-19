@@ -4,11 +4,14 @@
 <head>
   {% if jekyll.environment == "production" %}
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KCCD77W');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KCCD77W');</script>
   <!-- End Google Tag Manager -->
   {% endif %}
 
@@ -16,25 +19,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="奈良と滋賀を拠点とするフリーランスエンジニア「nonoichi(rhinonolike)」のポートフォリオです。" />
-  <meta name="keywords" content="nonoichi,rhinonolike,Portfolio,ポートフォリオ" />
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="keywords" content="{{ page.keywords }}" />
   <meta name="author" content="rhinonolike" />
   <!-- Facebook and Twitter integration -->
-  <meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:image" content="/assets/images/about.jpg" />
+  <meta property="og:url" content="https://p.danroo.com" />
+  <meta property="og:site_name" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:image" content="/assets/images/about.jpg" />
+  <meta name="twitter:url" content="https://p.danroo.com" />
+  <meta name="twitter:card" content="summary" />
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="shortcut icon" href="favicon.ico">
 
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 
   <!-- Animate.css -->
   <link rel="stylesheet" href="/assets/css/animate.css">
@@ -69,6 +73,8 @@
 
     gtag('config', 'UA-138489514-1');
   </script>
+  <script data-ad-client="ca-pub-9638052216153241" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   {% endif %}
 
 </head>
@@ -76,8 +82,8 @@
 <body>
   {% if jekyll.environment == "production" %}
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCCD77W"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCCD77W" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   {% endif %}
 

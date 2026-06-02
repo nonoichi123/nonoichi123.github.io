@@ -1,0 +1,11 @@
+<nav id="colorlib-main-menu" role="navigation" class="navbar">
+  <div id="navbar" class="collapse">
+    <ul>
+      {% for item in navigation %}
+        <li class="{% if page.url == item.link %}active{% endif %}">
+          <a href="#" data-nav-section="{{ item.section }}">{{ item.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

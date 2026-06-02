@@ -1,0 +1,63 @@
+<section class="colorlib-work" data-section="home">
+  <div class="colorlib-narrow-content">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 col-md-pull-3">
+        <span class="heading-meta">私の強み</span>
+        <h2 class="colorlib-heading animate-box">My Strengths</h2>
+      </div>
+    </div>
+    <div class="row strengths-grid">
+      {% for item in works %}
+        <div class="col-md-4 col-sm-6">
+          <div
+            class="blog-entry {% if item.category == 'iOSアプリ / Androidアプリ' %}entry-pink{% else %}entry-green{% endif %}"
+          >
+            {% if item.image %}
+              {% if item.url %}
+                <a
+                  href="{{ item.url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="blog-img"
+                  ><img
+                    src="{{ item.image }}"
+                    class="img-responsive"
+                    alt="{{ item.imageAlt }}"
+                /></a>
+              {% else %}
+                <span class="blog-img"
+                  ><img
+                    src="{{ item.image }}"
+                    class="img-responsive"
+                    alt="{{ item.imageAlt }}"
+                /></span>
+              {% endif %}
+            {% endif %}
+            <div class="desc">
+              <span>
+                <small
+                  class="{% if item.category == 'iOSアプリ / Androidアプリ' %}label-blue{% else %}label-green{% endif %}"
+                >
+                  {{ item.category }}
+                </small>
+              </span>
+              {% if item.url %}
+                <h3>
+                  <a
+                    href="{{ item.url }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >{{ item.title }}</a
+                  >
+                </h3>
+              {% else %}
+                <h3>{{ item.title }}</h3>
+              {% endif %}
+              <p><small>{{ item.description | safe }}</small></p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,44 @@
+[
+  {
+    "image": "assets/images/security-1.png",
+    "imageAlt": "情報処理安全確保支援士",
+    "url": "https://riss.ipa.go.jp/r?r=020270",
+    "category": "セキュリティ / コンサルティング",
+    "title": "情報処理安全確保支援士",
+    "description": "Web開発だけではなく、安全性を確保したインフラ基盤の構築や社内セキュリティ対策も支援してまいります。"
+  },
+  {
+    "image": "",
+    "imageAlt": "",
+    "url": "https://bousaisi.jp/",
+    "category": "防災 / コンサルティング",
+    "title": "防災士",
+    "description": "自助・共助・公助の視点から、地域や組織の防災力向上のための支援も行ってまいります。"
+  },
+  {
+    "image": "",
+    "imageAlt": "",
+    "url": "",
+    "category": "メンタルヘルス / コンサルティング",
+    "layout": "half",
+    "title": "メンタルヘルスカウンセラー",
+    "description": "心身の健康維持やストレスケアの相談にも対応してまいります。"
+  },
+  {
+    "image": "",
+    "imageAlt": "",
+    "url": "",
+    "category": "カウンセリング",
+    "layout": "half",
+    "title": "認定傾聴カウンセラー",
+    "description": "傾聴を通じた対話支援により、安心して話せる場づくりを支援してまいります。"
+  },
+  {
+    "image": "assets/images/app-1.jpg",
+    "imageAlt": "あるものリスト",
+    "url": "https://app.danroo.com",
+    "category": "iOSアプリ / Androidアプリ",
+    "title": "あるものリスト",
+    "description": "<span style=\"color:#ec5453;\">2020年12月にサービス終了</span>おうちにあるものを簡単に登録できて、家族みんなで同じあるものリストが閲覧できるアプリを公開・運用しました。"
+  }
+]

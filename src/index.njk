@@ -1,0 +1,40 @@
+---
+layout: layouts/default.njk
+title: ノノップ - 京都最南端・木津川市を拠点とするフルスタックエンジニア
+description: 京都最南端・木津川市を拠点とするフルスタックエンジニア「ノノップ」のポートフォリオです。
+keywords: ノノップ,フルスタックエンジニア, フリーランスエンジニア, nonopp,rhinonolike,Portfolio,ポートフォリオ
+permalink: index.html
+---
+
+<div id="colorlib-page">
+  <div class="container-wrap">
+    <a
+      href="#"
+      class="js-colorlib-nav-toggle colorlib-nav-toggle"
+      data-toggle="collapse"
+      data-target="#navbar"
+      aria-expanded="false"
+      aria-controls="navbar"
+      ><i></i
+    ></a>
+    <aside
+      id="colorlib-aside"
+      role="complementary"
+      class="border js-fullheight"
+    >
+      {% include "author.njk" %}
+      {% include "navigation.njk" %}
+      {% include "footer.njk" %}
+    </aside>
+
+    <div id="colorlib-main">
+      {% include "work.njk" %}
+      {% include "about.njk" %}
+      {% include "service.njk" %}
+      {% include "skill.njk" %}
+      {% include "experience.njk" %}
+      {% include "blog.njk" %}
+      {% include "contact.njk" %}
+    </div>
+  </div>
+</div>

@@ -35,6 +35,7 @@ test("index.html に案件実績とスキルが表示される", async () => {
   assert.match(html, /デモ機貸出システム開発/);
   assert.match(html, /後払い決済管理システム開発/);
   assert.match(html, /TypeScript/);
+  assert.match(html, /認定スクラムマスター（CSM）/);
   assert.match(html, /情報処理安全確保支援士/);
 });
 

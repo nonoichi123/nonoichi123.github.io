@@ -1,5 +1,13 @@
 [
   {
+    "image": "assets/images/csm.png",
+    "imageAlt": "認定スクラムマスター（CSM）",
+    "url": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster",
+    "category": "アジャイル / コンサルティング",
+    "title": "認定スクラムマスター（CSM）",
+    "description": "スクラムの実践とチーム支援を通じて、アジャイル開発の推進を支援してまいります。"
+  },
+  {
     "image": "assets/images/security-1.png",
     "imageAlt": "情報処理安全確保支援士",
     "url": "https://riss.ipa.go.jp/r?r=020270",

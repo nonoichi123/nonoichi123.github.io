@@ -42,6 +42,14 @@
     "description": "傾聴を通じた対話支援により、安心して話せる場づくりを支援してまいります。"
   },
   {
+    "image": "assets/images/hisai-check.png",
+    "imageAlt": "被災状況確認LINE",
+    "url": "https://hisai-check.com/",
+    "category": "防災 / サービス運営",
+    "title": "被災状況確認LINE",
+    "description": "災害時の被災状況確認を支援するサービスを企画・開発・運営しています。地域・組織の防災力向上に貢献します。"
+  },
+  {
     "image": "assets/images/app-1.jpg",
     "imageAlt": "あるものリスト",
     "url": "https://app.danroo.com",

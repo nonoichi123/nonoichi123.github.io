@@ -1,6 +1,10 @@
 {
   "url": "https://nonopp.jp",
+  "name": "ノノップ",
+  "nameEn": "nonopp",
   "author": "rhinonolike",
   "formspree": "https://formspree.io/f/xdavngbw",
-  "email": "nonoichi123@gmail.com"
+  "email": "nonoichi123@gmail.com",
+  "location": "京都府木津川市",
+  "tagline": "システム開発・ITサービス運営"
 }

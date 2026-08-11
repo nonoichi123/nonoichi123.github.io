@@ -21,31 +21,32 @@ test("index.html にサイト名と拠点が表示される", async () => {
 test("index.html に主要セクションが表示される", async () => {
   const html = await readBuiltPage("index.html");
 
-  assert.match(html, />Our Strengths</);
   assert.match(html, />About</);
   assert.match(html, />Services</);
   assert.match(html, />Skills</);
   assert.match(html, />Contact</);
+  assert.doesNotMatch(html, />Our Strengths</);
   assert.doesNotMatch(html, />Work Experience</);
 });
 
-test("index.html に 被災状況確認LINE 運営元の記載がある", async () => {
+test("index.html に理念とサービスが表示される", async () => {
   const html = await readBuiltPage("index.html");
 
-  assert.match(html, /被災状況確認LINE/);
-  assert.match(html, /hisai-check\.com/);
-  assert.match(html, /運営元/);
-  assert.match(html, /事業概要/);
+  assert.match(html, /信頼できるITパートナー/);
+  assert.match(html, /Webシステム開発/);
+  assert.match(html, /AIコンサルティング/);
+  assert.doesNotMatch(html, /被災状況確認LINE/);
+  assert.doesNotMatch(html, /hisai-check\.com/);
 });
 
-test("index.html にスキルが表示される", async () => {
+test("index.html にスキルと資格が表示される", async () => {
   const html = await readBuiltPage("index.html");
 
   assert.match(html, /TypeScript/);
   assert.match(html, /Laravel/);
   assert.match(html, /assets\/images\/skills\/laravel\.svg/);
   assert.match(html, /プログラム言語／フレームワーク/);
-  assert.match(html, /CMS・プラットフォーム/);
+  assert.match(html, /資格・認定/);
   assert.match(html, /認定スクラムマスター（CSM）/);
   assert.match(html, /情報処理安全確保支援士/);
   assert.doesNotMatch(html, /デモ機貸出システム開発/);

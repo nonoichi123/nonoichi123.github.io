@@ -2,108 +2,69 @@
   <div class="colorlib-narrow-content">
     <div class="row">
       <div class="col-md-12">
-        <span class="heading-meta">事業内容</span>
+        <span class="heading-meta">サービス</span>
         <h2 class="colorlib-heading">Services</h2>
         <p>
           <small
-            >リモート対応に加え、週1〜からの常駐・訪問支援にも対応しています</small
+            >開発・運用・AIコンサルティングまで。リモート対応に加え、週1〜からの常駐・訪問支援にも対応しています。</small
           >
         </p>
       </div>
     </div>
-    <div class="row row-pt-md">
-      <div class="col-md-4 text-center">
-        <div class="services color-1">
-          <span class="icon">
-            <i class="icon-bulb"></i>
-          </span>
-          <div class="desc">
-            <h3>Webシステム開発</h3>
-            <p>
-              <small>TypeScript、PHP、Pythonなどを使ったシステム開発</small>
-            </p>
-          </div>
+
+    <div class="service-feature-list">
+      {% for item in services %}
+      {% if not item.hidden %}
+      <article class="service-feature service-feature--color-{{ item.color }}">
+        {% if item.image %}
+        <div class="service-feature-media">
+          {% if item.url %}
+          <a
+            href="{{ item.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="{{ item.image }}"
+              alt="{{ item.imageAlt }}"
+              class="img-responsive"
+              loading="lazy"
+            />
+          </a>
+          {% else %}
+          <img
+            src="{{ item.image }}"
+            alt="{{ item.imageAlt }}"
+            class="img-responsive"
+            loading="lazy"
+          />
+          {% endif %}
         </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="services color-2">
-          <span class="icon">
-            <i class="icon-phone3"></i>
-          </span>
-          <div class="desc">
-            <h3>スマホアプリ開発</h3>
-            <p><small>Ionicを使ったハイブリッド型スマホアプリ開発</small></p>
-          </div>
+        {% elif item.icon %}
+        <div class="service-feature-icon">
+          <span class="icon"><i class="{{ item.icon }}"></i></span>
         </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="services color-3">
-          <span class="icon">
-            <i class="icon-data"></i>
-          </span>
-          <div class="desc">
-            <h3>バッチ・API開発</h3>
-            <p><small>シェルスクリプトやPHPを使ったバッチ、API開発</small></p>
-          </div>
+        {% endif %}
+        <div class="service-feature-body">
+          <span class="service-feature-subtitle">{{ item.subtitle }}</span>
+          <h3>
+            {% if item.url %}
+            <a
+              href="{{ item.url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ item.title }}</a
+            >
+            {% else %}
+            {{ item.title }}
+            {% endif %}
+          </h3>
+          <p class="service-feature-lead">{{ item.lead }}</p>
+          <p>{{ item.description }}</p>
         </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="services color-4">
-          <span class="icon">
-            <i class="icon-link"></i>
-          </span>
-          <div class="desc">
-            <h3>他システム連携開発</h3>
-            <p><small>LINE、ハローワーク、楽天API、各種API連携開発</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="services color-5">
-          <span class="icon">
-            <i class="icon-search4"></i>
-          </span>
-          <div class="desc">
-            <h3>コンサルティング</h3>
-            <p>
-              <small>売上向上施策提案や他社同行調査、システム選定、提案</small>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="services color-6">
-          <span class="icon">
-            <i class="icon-server"></i>
-          </span>
-          <div class="desc">
-            <h3>インフラ環境構築</h3>
-            <p><small>クラウドサーバ構築、ミドルウェアセットアップ</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="services color-1">
-          <span class="icon">
-            <i class="icon-cloud3"></i>
-          </span>
-          <div class="desc">
-            <h3>自社サービス運営</h3>
-            <p>
-              <small
-                >防災・被災状況確認サービス
-                <a
-                  href="https://hisai-check.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >被災状況確認LINE</a
-                >
-                などの企画・開発・運用</small
-              >
-            </p>
-          </div>
-        </div>
-      </div>
+      </article>
+      {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>

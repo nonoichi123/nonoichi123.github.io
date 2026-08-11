@@ -1,5 +1,4 @@
 [
-  { "name": "Home", "link": "/", "section": "home" },
   { "name": "About", "link": "#about", "section": "about" },
   { "name": "Services", "link": "#services", "section": "services" },
   { "name": "Skills", "link": "#skills", "section": "skills" },

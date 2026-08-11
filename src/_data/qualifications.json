@@ -1,0 +1,34 @@
+[
+  {
+    "title": "認定スクラムマスター（CSM）",
+    "category": "アジャイル",
+    "url": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster",
+    "image": "assets/images/csm.png",
+    "imageAlt": "認定スクラムマスター（CSM）",
+    "description": "スクラムの実践とチーム支援を通じて、アジャイル開発の推進を支援します。"
+  },
+  {
+    "title": "情報処理安全確保支援士",
+    "category": "セキュリティ",
+    "url": "https://riss.ipa.go.jp/r?r=020270",
+    "image": "assets/images/security-1.png",
+    "imageAlt": "情報処理安全確保支援士",
+    "description": "安全性を考慮したインフラ基盤の構築や、社内セキュリティ対策も支援します。"
+  },
+  {
+    "title": "防災士",
+    "category": "防災",
+    "url": "https://bousaisi.jp/",
+    "description": "自助・共助・公助の視点から、地域や組織の防災力向上を支援します。"
+  },
+  {
+    "title": "メンタルヘルスカウンセラー",
+    "category": "メンタルヘルス",
+    "description": "心身の健康維持やストレスケアの相談にも対応します。"
+  },
+  {
+    "title": "認定傾聴カウンセラー",
+    "category": "カウンセリング",
+    "description": "傾聴を通じた対話支援により、安心して話せる場づくりを支援します。"
+  }
+]

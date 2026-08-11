@@ -1,0 +1,53 @@
+[
+  {
+    "title": "被災状況確認LINE",
+    "subtitle": "防災・サービス運営",
+    "lead": "災害時の安否・被災状況確認を、LINEでシンプルに。",
+    "description": "地域・組織の防災力向上に貢献する自社サービスです。企画から開発・運用まで一貫して手がけ、現場で使い続けられる仕組みづくりを大切にしています。",
+    "image": "assets/images/hisai-check.png",
+    "imageAlt": "被災状況確認LINE",
+    "url": "https://hisai-check.com/",
+    "color": 1,
+    "hidden": true
+  },
+  {
+    "title": "Webシステム開発",
+    "subtitle": "設計・実装・改善",
+    "lead": "要件整理から実装・改善まで、現場に寄り添って進めます。",
+    "description": "TypeScript / PHP / Python などを用い、業務システムの新規開発や既存システムの改善に対応します。リモートはもちろん、週1〜の常駐・訪問支援も可能です。",
+    "icon": "icon-bulb",
+    "color": 2
+  },
+  {
+    "title": "スマホアプリ開発",
+    "subtitle": "iOS / Android",
+    "lead": "ハイブリッドアプリで、効率よく両OSに届けます。",
+    "description": "Ionic を活用したハイブリッド型スマホアプリの企画・開発・公開を支援します。運用まで見据えた実装を心がけています。",
+    "icon": "icon-phone3",
+    "color": 3
+  },
+  {
+    "title": "バッチ・API / システム連携",
+    "subtitle": "つなぐ開発",
+    "lead": "外部サービスや社内システムをつなぎ、業務を滑らかにします。",
+    "description": "シェルや PHP を使ったバッチ・API 開発に加え、LINE / 各種 API など他システム連携にも対応します。",
+    "icon": "icon-data",
+    "color": 4
+  },
+  {
+    "title": "AIコンサルティング",
+    "subtitle": "選定・提案・伴走",
+    "lead": "生成AIの活用方針づくりから、現場への定着まで伴走します。",
+    "description": "業務へのAI導入検討、ツール選定・検証、プロンプト設計や業務フロー改善など、開発にとどまらない伴走支援を行います。",
+    "icon": "icon-search4",
+    "color": 5
+  },
+  {
+    "title": "インフラ環境構築",
+    "subtitle": "クラウド / サーバ",
+    "lead": "安全で運用しやすい基盤づくりを支援します。",
+    "description": "クラウドサーバ構築やミドルウェアのセットアップなど、開発成果を安定稼働させるインフラ面も対応します。",
+    "icon": "icon-server",
+    "color": 6
+  }
+]

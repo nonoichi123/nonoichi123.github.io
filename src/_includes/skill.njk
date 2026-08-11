@@ -6,7 +6,8 @@
         <h2 class="colorlib-heading">Skills</h2>
         <p>
           <small
-            >資格・認定と技術領域で、Services の品質を支えています。ご要件に合わせて柔軟に対応します。</small
+            >資格・認定と技術領域で、Services
+            の品質を支えています。ご要件に合わせて柔軟に対応します。</small
           >
         </p>
       </div>
@@ -19,80 +20,82 @@
       </p>
       <div class="row qualification-grid">
         {% for item in qualifications %}
-        <div class="col-md-6">
-          <article class="qualification-card">
-            {% if item.image %}
-            <div class="qualification-card-media">
-              {% if item.url %}
-              <a
-                href="{{ item.url }}"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="{{ item.image }}"
-                  alt="{{ item.imageAlt }}"
-                  class="img-responsive"
-                  loading="lazy"
-                />
-              </a>
-              {% else %}
-              <img
-                src="{{ item.image }}"
-                alt="{{ item.imageAlt }}"
-                class="img-responsive"
-                loading="lazy"
-              />
+          <div class="col-md-6">
+            <article class="qualification-card">
+              {% if item.image %}
+                <div class="qualification-card-media">
+                  {% if item.url %}
+                    <a
+                      href="{{ item.url }}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="{{ item.image }}"
+                        alt="{{ item.imageAlt }}"
+                        class="img-responsive"
+                        loading="lazy"
+                      />
+                    </a>
+                  {% else %}
+                    <img
+                      src="{{ item.image }}"
+                      alt="{{ item.imageAlt }}"
+                      class="img-responsive"
+                      loading="lazy"
+                    />
+                  {% endif %}
+                </div>
               {% endif %}
-            </div>
-            {% endif %}
-            <div class="qualification-card-body">
-              <span class="qualification-category">{{ item.category }}</span>
-              <h4>
-                {% if item.url %}
-                <a
-                  href="{{ item.url }}"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >{{ item.title }}</a
-                >
-                {% else %}
-                {{ item.title }}
-                {% endif %}
-              </h4>
-              <p>{{ item.description }}</p>
-            </div>
-          </article>
-        </div>
+              <div class="qualification-card-body">
+                <span class="qualification-category">{{ item.category }}</span>
+                <h4>
+                  {% if item.url %}
+                    <a
+                      href="{{ item.url }}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >{{ item.title }}</a
+                    >
+                  {% else %}
+                    {{ item.title }}
+                  {% endif %}
+                </h4>
+                <p>{{ item.description }}</p>
+              </div>
+            </article>
+          </div>
         {% endfor %}
       </div>
     </div>
 
     <div class="row skill-capabilities">
       {% for group in skills %}
-      <div class="col-md-12">
-        <div class="skill-group">
-          <h3 class="skill-group-title">{{ group.category }}</h3>
-          <p class="skill-group-summary">{{ group.summary }}</p>
-          <ul class="skill-list">
-            {% for item in group.items %}
-            <li class="skill-chip{% if item.icon %} skill-chip--icon{% endif %}">
-              {% if item.icon %}
-              <img
-                class="skill-chip-icon"
-                src="assets/images/skills/{{ item.icon }}"
-                alt=""
-                width="22"
-                height="22"
-                loading="lazy"
-              />
-              {% endif %}
-              <span class="skill-chip-name">{{ item.name }}</span>
-            </li>
-            {% endfor %}
-          </ul>
+        <div class="col-md-12">
+          <div class="skill-group">
+            <h3 class="skill-group-title">{{ group.category }}</h3>
+            <p class="skill-group-summary">{{ group.summary }}</p>
+            <ul class="skill-list">
+              {% for item in group.items %}
+                <li
+                  class="skill-chip{% if item.icon %}skill-chip--icon{% endif %}"
+                >
+                  {% if item.icon %}
+                    <img
+                      class="skill-chip-icon"
+                      src="assets/images/skills/{{ item.icon }}"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                    />
+                  {% endif %}
+                  <span class="skill-chip-name">{{ item.name }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
-      </div>
       {% endfor %}
     </div>
   </div>

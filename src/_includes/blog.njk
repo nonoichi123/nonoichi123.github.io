@@ -8,36 +8,36 @@
     </div>
     <div class="row blog-grid">
       {% for item in blogs %}
-      <div class="col-md-4 col-sm-6">
-        <article class="blog-entry">
-          <a
-            href="{{ item.url }}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="blog-img"
-          >
-            <img
-              src="{{ item.image }}"
-              class="img-responsive"
-              alt="{{ item.imageAlt }}"
-            />
-          </a>
-          <div class="desc">
-            <span class="blog-meta">
-              <small class="blog-category">{{ item.category }}</small>
-            </span>
-            <h3>
-              <a
-                href="{{ item.url }}"
-                target="_blank"
-                rel="noopener noreferrer"
-                >{{ item.title }}</a
-              >
-            </h3>
-            <p><small>{{ item.description }}</small></p>
-          </div>
-        </article>
-      </div>
+        <div class="col-md-4 col-sm-6">
+          <article class="blog-entry">
+            <a
+              href="{{ item.url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="blog-img"
+            >
+              <img
+                src="{{ item.image }}"
+                class="img-responsive"
+                alt="{{ item.imageAlt }}"
+              />
+            </a>
+            <div class="desc">
+              <span class="blog-meta">
+                <small class="blog-category">{{ item.category }}</small>
+              </span>
+              <h3>
+                <a
+                  href="{{ item.url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >{{ item.title }}</a
+                >
+              </h3>
+              <p><small>{{ item.description }}</small></p>
+            </div>
+          </article>
+        </div>
       {% endfor %}
     </div>
   </div>

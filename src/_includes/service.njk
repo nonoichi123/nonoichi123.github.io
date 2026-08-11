@@ -14,56 +14,58 @@
 
     <div class="service-feature-list">
       {% for item in services %}
-      {% if not item.hidden %}
-      <article class="service-feature service-feature--color-{{ item.color }}">
-        {% if item.image %}
-        <div class="service-feature-media">
-          {% if item.url %}
-          <a
-            href="{{ item.url }}"
-            target="_blank"
-            rel="noopener noreferrer"
+        {% if not item.hidden %}
+          <article
+            class="service-feature service-feature--color-{{ item.color }}"
           >
-            <img
-              src="{{ item.image }}"
-              alt="{{ item.imageAlt }}"
-              class="img-responsive"
-              loading="lazy"
-            />
-          </a>
-          {% else %}
-          <img
-            src="{{ item.image }}"
-            alt="{{ item.imageAlt }}"
-            class="img-responsive"
-            loading="lazy"
-          />
-          {% endif %}
-        </div>
-        {% elif item.icon %}
-        <div class="service-feature-icon">
-          <span class="icon"><i class="{{ item.icon }}"></i></span>
-        </div>
-        {% endif %}
-        <div class="service-feature-body">
-          <span class="service-feature-subtitle">{{ item.subtitle }}</span>
-          <h3>
-            {% if item.url %}
-            <a
-              href="{{ item.url }}"
-              target="_blank"
-              rel="noopener noreferrer"
-              >{{ item.title }}</a
-            >
-            {% else %}
-            {{ item.title }}
+            {% if item.image %}
+              <div class="service-feature-media">
+                {% if item.url %}
+                  <a
+                    href="{{ item.url }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="{{ item.image }}"
+                      alt="{{ item.imageAlt }}"
+                      class="img-responsive"
+                      loading="lazy"
+                    />
+                  </a>
+                {% else %}
+                  <img
+                    src="{{ item.image }}"
+                    alt="{{ item.imageAlt }}"
+                    class="img-responsive"
+                    loading="lazy"
+                  />
+                {% endif %}
+              </div>
+            {% elif item.icon %}
+              <div class="service-feature-icon">
+                <span class="icon"><i class="{{ item.icon }}"></i></span>
+              </div>
             {% endif %}
-          </h3>
-          <p class="service-feature-lead">{{ item.lead }}</p>
-          <p>{{ item.description }}</p>
-        </div>
-      </article>
-      {% endif %}
+            <div class="service-feature-body">
+              <span class="service-feature-subtitle">{{ item.subtitle }}</span>
+              <h3>
+                {% if item.url %}
+                  <a
+                    href="{{ item.url }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >{{ item.title }}</a
+                  >
+                {% else %}
+                  {{ item.title }}
+                {% endif %}
+              </h3>
+              <p class="service-feature-lead">{{ item.lead }}</p>
+              <p>{{ item.description }}</p>
+            </div>
+          </article>
+        {% endif %}
       {% endfor %}
     </div>
   </div>

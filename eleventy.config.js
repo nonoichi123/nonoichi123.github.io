@@ -10,7 +10,6 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
-  eleventyConfig.addPassthroughCopy("src/CNAME");
 
   eleventyConfig.addGlobalData("env", {
     production: process.env.ELEVENTY_ENV === "production",

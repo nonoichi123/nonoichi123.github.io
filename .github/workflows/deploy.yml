@@ -4,6 +4,9 @@ on:
   push:
     branches: [main, master]
   workflow_dispatch:
+  # 毎週日曜 7:00 JST（GitHub cron は UTC のため土曜 22:00）
+  schedule:
+    - cron: "0 22 * * 6"
 
 permissions:
   contents: read

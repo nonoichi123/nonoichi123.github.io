@@ -1,4 +1,13 @@
+import { mkdir, writeFile } from "node:fs/promises";
+import { fetchInstagramFeed } from "./lib/instagram.js";
+
 export default function (eleventyConfig) {
+  eleventyConfig.on("eleventy.before", async () => {
+    const feed = await fetchInstagramFeed();
+    await mkdir(".cache", { recursive: true });
+    await writeFile(".cache/instagram-feed.json", JSON.stringify(feed));
+  });
+
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/CNAME");

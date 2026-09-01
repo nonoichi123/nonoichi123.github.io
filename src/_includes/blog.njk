@@ -40,5 +40,44 @@
         </div>
       {% endfor %}
     </div>
+    <div class="row">
+      <div class="col-md-12">
+        <span class="heading-meta instagram-heading">
+          <i class="icon-instagram" aria-hidden="true"></i>
+          Instagram
+        </span>
+        <p class="instagram-lead">
+          <small>オリジナル曲を発信しています。</small>
+        </p>
+      </div>
+    </div>
+    <div class="instagram-grid">
+      {% for item in instagram.posts %}
+        <a
+          href="{{ item.permalink }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="instagram-tile"
+        >
+          {% if item.image %}
+            <img
+              src="{{ item.image }}"
+              alt="{{ item.caption or 'Instagram' }}"
+            />
+          {% endif %}
+        </a>
+      {% endfor %}
+    </div>
+    <p class="instagram-more">
+      <a
+        href="{{ site.instagram }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+      >
+        <i class="icon-instagram" aria-hidden="true"></i>
+        Instagram を見る
+      </a>
+    </p>
   </div>
 </section>

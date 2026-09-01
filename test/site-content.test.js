@@ -58,6 +58,16 @@ test("index.html にブログが表示される", async () => {
   assert.match(html, /Recent Blog/);
   assert.match(html, /Danroo note/);
   assert.match(html, /blog-danroo\.jpg/);
+  assert.match(html, /instagram-grid/);
+  assert.match(html, /icon-instagram/);
+  assert.match(html, /オリジナル曲を発信しています。/);
+  assert.match(html, /instagram-more/);
+  assert.match(html, /Instagram を見る/);
+  assert.match(
+    html,
+    /href="https:\/\/www\.instagram\.com\/rhinonolike\/"[\s\S]*?target="_blank"[\s\S]*?rel="noopener noreferrer"/,
+  );
+  assert.doesNotMatch(html, /instagram-feed\.js/);
   assert.doesNotMatch(html, /Firebase Emulator Suite/);
   assert.doesNotMatch(html, /続きを読む/);
 });

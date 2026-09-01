@@ -6,6 +6,9 @@
   "scripts": {
     "build": "ELEVENTY_ENV=production npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve",
+    "instagram:auth": "node scripts/instagram-auth.mjs",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
     "clean": "rm -rf _site",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -18,6 +21,7 @@
     "devicon": "^2.16.0",
     "html-validate": "^9.0.0",
     "prettier": "^3.5.0",
-    "prettier-plugin-jinja-template": "^2.0.0"
+    "prettier-plugin-jinja-template": "^2.0.0",
+    "wrangler": "^4.127.1"
   }
 }

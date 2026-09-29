@@ -7,7 +7,17 @@
     "image": "assets/images/hisai-check.png",
     "imageAlt": "被災状況確認LINE",
     "url": "https://hisai-check.com/",
+    "external": true,
     "color": 1
+  },
+  {
+    "title": "外部IT担当",
+    "subtitle": "ホームページ運用・IT相談",
+    "lead": "ITの「これ、誰に聞けばいい？」をなくします。",
+    "description": "ホームページの運用から、AI活用・アプリ・業務効率化まで。困ったときに気軽に相談できる、御社の外部IT担当です。",
+    "icon": "icon-briefcase",
+    "url": "/services/it-support/",
+    "color": 7
   },
   {
     "title": "Webシステム開発",

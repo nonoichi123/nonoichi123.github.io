@@ -1814,6 +1814,7 @@ span.required {
 .service-feature--color-4 .service-feature-icon .icon { background: #a84cb8; }
 .service-feature--color-5 .service-feature-icon .icon { background: #2fa499; }
 .service-feature--color-6 .service-feature-icon .icon { background: #4054b2; }
+.service-feature--color-7 .service-feature-icon .icon { background: #1f4e79; }
 
 .service-feature-body {
   flex: 1 1 auto;
@@ -1838,12 +1839,24 @@ span.required {
 }
 
 .service-feature-body h3 a {
-  color: inherit;
-  text-decoration: none;
+  color: #2c98f0;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .service-feature-body h3 a:hover {
-  color: #2c98f0;
+  color: #1a7ac4;
+}
+
+.service-external-icon {
+  display: inline-block;
+  margin-left: 0.35em;
+  vertical-align: -0.05em;
+  line-height: 0;
+}
+
+.service-external-icon svg {
+  display: block;
 }
 
 .service-feature-lead {
@@ -1971,4 +1984,210 @@ span.required {
 
 .colorlib-blog .blog-entry .desc p {
   color: #5a6570;
+}
+
+.it-support {
+  padding-top: 3em;
+  padding-bottom: 4em;
+}
+
+.it-support-back {
+  margin-bottom: 1.5em;
+}
+
+.it-support-back a {
+  color: #2c98f0;
+}
+
+.it-support-hero h2 {
+  margin: 0.2em 0 0.6em;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #1f4e79;
+  font-family: "Noto Sans JP", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+.it-support-section-title {
+  margin: 2em 0 0.6em;
+  font-size: 22px;
+  color: #2c3e50;
+  font-family: "Noto Sans JP", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+.it-support-area-list,
+.it-support-plans,
+.it-support-tiers,
+.it-support-flow {
+  display: grid;
+  gap: 1em;
+  margin: 1em 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.it-support-area-list,
+.it-support-plans {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.it-support-area-list li,
+.it-support-plans article,
+.it-support-light,
+.it-support-extras,
+.it-support-notes {
+  margin: 0;
+  padding: 1.1em 1.2em;
+  border: 1px solid #e6ebf2;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.it-support-area-list h4,
+.it-support-plans h4,
+.it-support-light h3,
+.it-support-standard h3,
+.it-support-contact h3 {
+  margin: 0 0 0.35em;
+  font-family: "Noto Sans JP", "Hiragino Sans", Meiryo, sans-serif;
+  color: #1f4e79;
+}
+
+.it-support-kicker,
+.it-support-fit,
+.it-support-role {
+  color: #5a6570;
+}
+
+.it-support-kicker {
+  margin-bottom: 0.4em;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.it-support-standard,
+.it-support-contact {
+  margin-top: 2em;
+  padding: 1.5em 1.4em;
+  border-radius: 10px;
+  background: #1f4e79;
+  color: #fff;
+}
+
+.it-support-standard h3,
+.it-support-standard p,
+.it-support-contact h3,
+.it-support-contact p,
+.it-support-contact a {
+  color: #fff;
+}
+
+.it-support-price {
+  margin: 0.2em 0 0.6em;
+}
+
+.it-support-price strong {
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.it-support-price span {
+  margin-left: 0.4em;
+  font-size: 14px;
+}
+
+.it-support-badge {
+  display: inline-block;
+  margin: 0 0 0.6em;
+  padding: 0.15em 0.7em;
+  border-radius: 999px;
+  background: #2fa499;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.it-support-badge-alt {
+  background: #f9bf3f;
+  color: #2c3e50;
+}
+
+.it-support-standard ul,
+.it-support-plans ul,
+.it-support-light ul,
+.it-support-extras,
+.it-support-notes {
+  margin: 0.8em 0 0;
+  padding-left: 1.2em;
+}
+
+.it-support-plans {
+  margin-top: 1em;
+}
+
+.it-support-flow,
+.it-support-tiers {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.it-support-flow {
+  grid-template-columns: 1fr;
+}
+
+.it-support-flow li,
+.it-support-tiers li {
+  display: grid;
+  gap: 0.2em;
+  padding: 0.9em 1em;
+  border-radius: 8px;
+  background: #f4f7fb;
+}
+
+.it-support-tiers li.is-featured {
+  background: #1f4e79;
+  color: #fff;
+}
+
+.it-support-free {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.it-support-line {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.it-support-line img {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.it-support-extras,
+.it-support-notes,
+.it-support-light {
+  margin-top: 1em;
+}
+
+.it-support-extras,
+.it-support-notes {
+  padding-left: 2.4em;
+}
+
+@media screen and (max-width: 768px) {
+  .it-support-hero h2 {
+    font-size: 26px;
+  }
+
+  .it-support-area-list,
+  .it-support-plans,
+  .it-support-tiers {
+    grid-template-columns: 1fr;
+  }
+
+  .it-support-line {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

@@ -38,6 +38,10 @@ test("index.html に理念とサービスが表示される", async () => {
   assert.match(html, /被災状況確認LINE/);
   assert.match(html, /災害時の安否・被災状況確認を、LINEでシンプルに。/);
   assert.match(html, /https:\/\/hisai-check\.com\//);
+  assert.match(html, /service-external-icon/);
+  assert.match(html, /新しいタブで開く/);
+  assert.match(html, /外部IT担当/);
+  assert.match(html, /href="\/services\/it-support\/"/);
 });
 
 test("index.html にスキルと資格が表示される", async () => {
@@ -78,6 +82,22 @@ test("index.html にお問い合わせフォームが表示される", async () 
   assert.match(html, /内容を送信する/);
   assert.doesNotMatch(html, /nonoichi123@gmail\.com/);
   assert.doesNotMatch(html, /名刺交換後/);
+});
+
+test("外部IT担当の紹介ページにプランと相談先が表示される", async () => {
+  const html = await readBuiltPage("services/it-support/index.html");
+
+  assert.match(html, /ITの「これ、誰に聞けばいい？」をなくします。/);
+  assert.match(html, /スタンダードプラン/);
+  assert.match(html, /5,000円/);
+  assert.match(html, /伴走サポートプラン/);
+  assert.match(html, /10,000円/);
+  assert.match(html, /3,000円/);
+  assert.doesNotMatch(html, /080/);
+  assert.doesNotMatch(html, /sales@nonopp\.jp/);
+  assert.doesNotMatch(html, /平日 10:00/);
+  assert.match(html, /assets\/images\/line-qr\.png/);
+  assert.match(html, /最初の30分は無料/);
 });
 
 test("thanks.html にお問い合わせ完了メッセージが表示される", async () => {

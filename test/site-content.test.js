@@ -35,8 +35,9 @@ test("index.html に理念とサービスが表示される", async () => {
   assert.match(html, /信頼できるITパートナー/);
   assert.match(html, /Webシステム開発/);
   assert.match(html, /AIコンサルティング/);
-  assert.doesNotMatch(html, /被災状況確認LINE/);
-  assert.doesNotMatch(html, /hisai-check\.com/);
+  assert.match(html, /被災状況確認LINE/);
+  assert.match(html, /災害時の安否・被災状況確認を、LINEでシンプルに。/);
+  assert.match(html, /https:\/\/hisai-check\.com\//);
 });
 
 test("index.html にスキルと資格が表示される", async () => {

@@ -7,8 +7,7 @@
     "image": "assets/images/hisai-check.png",
     "imageAlt": "被災状況確認LINE",
     "url": "https://hisai-check.com/",
-    "color": 1,
-    "hidden": true
+    "color": 1
   },
   {
     "title": "Webシステム開発",

@@ -2,8 +2,12 @@
   <div id="navbar" class="collapse">
     <ul>
       {% for item in navigation %}
-        <li class="{% if page.url == item.link %}active{% endif %}">
-          {% if page.url == "/" %}
+        <li
+          class="{% if item.page and (page.url | startsWith(item.link)) %}active{% elif not item.page and page.url == item.link %}active{% endif %}"
+        >
+          {% if item.page %}
+            <a class="external" href="{{ item.link }}">{{ item.name }}</a>
+          {% elif page.url == "/" %}
             <a href="#" data-nav-section="{{ item.section }}"
               >{{ item.name }}</a
             >

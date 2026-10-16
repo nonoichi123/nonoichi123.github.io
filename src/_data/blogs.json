@@ -5,6 +5,17 @@
     "url": "https://www.danroo.com/",
     "category": "個人ブログ",
     "title": "Danroo note",
-    "description": "開発で学んだことや気付き、備忘録、トラブルの記録などをまとめています。"
+    "description": "開発で学んだことや気付き、備忘録、トラブルの記録などをまとめています。",
+    "external": true
+  },
+  {
+    "image": "assets/images/nonopp.png",
+    "imageAlt": "nonopp log",
+    "url": "/blog/",
+    "category": "企業ブログ",
+    "title": "nonopp log",
+    "description": "開発で学んだことや気付きをまとめています。",
+    "external": false,
+    "fit": "contain"
   }
 ]

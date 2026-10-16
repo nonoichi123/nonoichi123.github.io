@@ -3,12 +3,21 @@
   "name": "nonopp-jp",
   "account_id": "35a3e7f3abf7a993d4c4f0804b4fc35b",
   "compatibility_date": "2026-09-01",
+  "main": "workers/ssr.js",
   "workers_dev": true,
   "assets": {
     "directory": "./_site",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    // 静的 HTML が残っていても SSR を優先する
+    "run_worker_first": ["/news", "/news/*", "/blog", "/blog/*", "/sitemap.xml"],
   },
   "routes": [
     { "pattern": "nonopp.jp", "custom_domain": true },
     { "pattern": "www.nonopp.jp", "custom_domain": true },
   ],
+  "vars": {
+    "SITE_ORIGIN": "https://nonopp.jp",
+    "ENVIRONMENT": "production",
+  },
 }

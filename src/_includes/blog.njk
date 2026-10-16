@@ -12,9 +12,10 @@
           <article class="blog-entry">
             <a
               href="{{ item.url }}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="blog-img"
+              {% if item.external %}
+                target="_blank" rel="noopener noreferrer"
+              {% endif %}
+              class="blog-img{{ ' blog-img-contain' if item.fit == 'contain' else '' }}"
             >
               <img
                 src="{{ item.image }}"
@@ -29,8 +30,9 @@
               <h3>
                 <a
                   href="{{ item.url }}"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  {% if item.external %}
+                    target="_blank" rel="noopener noreferrer"
+                  {% endif %}
                   >{{ item.title }}</a
                 >
               </h3>

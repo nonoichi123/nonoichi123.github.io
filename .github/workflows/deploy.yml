@@ -20,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+      # ビルド時トップ抜粋用。SSR 用は Cloudflare Worker の runtime secret も設定すること。
+      NEWS_INDEX_URL: ${{ secrets.NEWS_INDEX_URL }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - uses: actions/checkout@v5
@@ -30,4 +32,10 @@ jobs:
       - run: npm ci
       - run: npm run format:check
       - run: npm run test
+      # SSR 実行時に hubno JSON を取得するため Worker secret を同期
+      - name: Sync NEWS_INDEX_URL secret
+        run: |
+          if [ -n "${NEWS_INDEX_URL}" ]; then
+            printf '%s' "${NEWS_INDEX_URL}" | npx wrangler secret put NEWS_INDEX_URL
+          fi
       - run: npx wrangler deploy

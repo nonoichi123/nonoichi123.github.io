@@ -1,0 +1,4 @@
+# wrangler dev / preview 用（.dev.vars にコピー）
+NEWS_INDEX_URL=https://hubno.nonopp.jp/api/public/YOUR_TOKEN/news/index.json
+SITE_ORIGIN=http://127.0.0.1:8787
+ENVIRONMENT=development

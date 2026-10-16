@@ -6,6 +6,7 @@
       { "name": "PHP", "icon": "php.svg" },
       { "name": "Laravel", "icon": "laravel.svg" },
       { "name": "Symfony", "icon": "symfony.svg" },
+      { "name": "CakePHP", "icon": "cakephp.png" },
       { "name": "Python", "icon": "python.svg" },
       { "name": "TypeScript", "icon": "typescript.svg" },
       { "name": "React", "icon": "react.svg" },
@@ -23,9 +24,9 @@
     "items": [
       { "name": "WordPress", "icon": "wordpress.svg" },
       { "name": "Drupal", "icon": "drupal.svg" },
-      { "name": "ECCube" },
-      { "name": "Refine" },
-      { "name": "Solr" }
+      { "name": "ECCube", "icon": "eccube.png" },
+      { "name": "Refine", "icon": "refine.svg" },
+      { "name": "Solr", "icon": "solr.png" }
     ]
   },
   {
@@ -35,21 +36,23 @@
       { "name": "GitHub", "icon": "github.svg" },
       { "name": "GitLab", "icon": "gitlab.svg" },
       { "name": "Bitbucket", "icon": "bitbucket.svg" },
-      { "name": "Backlog" },
-      { "name": "Redmine" },
+      { "name": "Backlog", "icon": "backlog.png" },
+      { "name": "Redmine", "icon": "redmine.svg" },
       { "name": "Jira", "icon": "jira.svg" },
       { "name": "Slack", "icon": "slack.svg" },
-      { "name": "Chatwork" },
-      { "name": "LINE WORKS" },
+      { "name": "Chatwork", "icon": "chatwork.png" },
+      { "name": "LINE", "icon": "line.svg" },
+      { "name": "LINE WORKS", "icon": "lineworks.png" },
       { "name": "Jest", "icon": "jest.svg" },
-      { "name": "Cypress" },
+      { "name": "Cypress", "icon": "cypress.png" },
       { "name": "Puppeteer", "icon": "puppeteer.svg" },
       { "name": "Selenium", "icon": "selenium.svg" },
       { "name": "Storybook", "icon": "storybook.svg" },
       { "name": "Figma", "icon": "figma.svg" },
-      { "name": "ChatGPT" },
-      { "name": "Claude" },
-      { "name": "Cursor" }
+      { "name": "Stripe", "icon": "stripe.png" },
+      { "name": "ChatGPT", "icon": "chatgpt.svg" },
+      { "name": "Claude", "icon": "claude.svg" },
+      { "name": "Cursor", "icon": "cursor.svg" }
     ]
   },
   {
@@ -70,7 +73,7 @@
       { "name": "CentOS", "icon": "centos.svg" },
       { "name": "Apache", "icon": "apache.svg" },
       { "name": "Firebase", "icon": "firebase.svg" },
-      { "name": "XServer VPS" },
+      { "name": "XServer VPS", "icon": "xserver.png" },
       { "name": "Heroku", "icon": "heroku.svg" },
       { "name": "Vagrant", "icon": "vagrant.svg" },
       { "name": "GitHub Actions", "icon": "githubactions.svg" }

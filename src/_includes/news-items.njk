@@ -1,0 +1,33 @@
+{% set entries = items if items else news.items %}
+{% if entries.length == 0 %}
+  <p>
+    {{ emptyMessage if emptyMessage else "公開中のお知らせはありません。" }}
+  </p>
+{% else %}
+  <ul class="news-list">
+    {% for item in entries %}
+      {% if not limit or loop.index0 < limit %}
+        <li>
+          <a class="news-card" href="{{ item.url }}">
+            <span class="news-card-text">
+              <span class="news-card-title">{{ item.title }}</span>
+              {% if item.description %}
+                <span class="news-card-desc">{{ item.description }}</span>
+              {% endif %}
+              <time datetime="{{ item.publishedAt }}"
+                >{{ item.publishedAtLabel }}</time
+              >
+            </span>
+            {% if item.eyecatchUrl %}
+              <img
+                class="news-card-thumb"
+                src="{{ item.eyecatchUrl }}"
+                alt=""
+              />
+            {% endif %}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endif %}

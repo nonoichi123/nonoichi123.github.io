@@ -1,15 +1,12 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { fetchInstagramFeed } from "./lib/instagram.js";
-import { fetchNews } from "./lib/news.js";
 
 export default function (eleventyConfig) {
   eleventyConfig.on("eleventy.before", async () => {
-    // お知らせ・ブログの一覧/詳細は Workers SSR（functions/）が担当。
-    // トップの News 抜粋だけビルド時取得（未設定時は空）。
-    const [feed, news] = await Promise.all([fetchInstagramFeed(), fetchNews()]);
+    // お知らせ・ブログは Workers SSR（functions/）が担当。
+    const feed = await fetchInstagramFeed();
     await mkdir(".cache", { recursive: true });
     await writeFile(".cache/instagram-feed.json", JSON.stringify(feed));
-    await writeFile(".cache/news.json", JSON.stringify(news));
   });
 
   eleventyConfig.addPassthroughCopy("src/assets");

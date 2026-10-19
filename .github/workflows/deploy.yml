@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
-      # ビルド時トップ抜粋用。SSR 用は Cloudflare Worker の runtime secret も設定すること。
+      # Worker secret 同期用（SSR）。ビルド自体は不要。
       NEWS_INDEX_URL: ${{ secrets.NEWS_INDEX_URL }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:

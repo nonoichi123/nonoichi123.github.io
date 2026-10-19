@@ -59,7 +59,7 @@ hubno（`https://hubno.nonopp.jp`）が配信する既存の公開 JSON を、Cl
 
 | 変数             | 用途                                                 |
 | ---------------- | ---------------------------------------------------- |
-| `NEWS_INDEX_URL` | ビルド時（トップ抜粋）と Workers 実行時（SSR）       |
+| `NEWS_INDEX_URL` | Workers 実行時（`/news/` `/blog/` SSR・sitemap）     |
 | `BLOG_INDEX_URL` | 任意。未設定時は news URL の `/blog/index.json`      |
 | `SITE_ORIGIN`    | canonical / sitemap 用（本番は `https://nonopp.jp`） |
 

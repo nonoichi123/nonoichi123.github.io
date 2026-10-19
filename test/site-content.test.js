@@ -133,12 +133,14 @@ test("外部IT担当の紹介ページにプランと相談先が表示される
   assert.match(html, /最初の30分は無料/);
 });
 
-test("トップの News 導線と robots.txt がある", async () => {
+test("トップの News は一覧リンクのみで robots.txt がある", async () => {
   const html = await readBuiltPage("index.html");
   const robots = await readBuiltPage("robots.txt");
 
   assert.match(html, /href="\/news\/"/);
+  assert.match(html, /お知らせ一覧/);
   assert.match(html, />News</);
+  assert.doesNotMatch(html, /news-list/);
   assert.match(robots, /Sitemap: https:\/\/nonopp\.jp\/sitemap\.xml/);
 });
 

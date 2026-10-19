@@ -6,14 +6,8 @@
         <h2 class="colorlib-heading">News</h2>
       </div>
     </div>
-    {% set limit = 3 %}
-    {% include "news-items.njk" %}
     <p class="news-more">
-      {% if news.items.length > 3 %}
-        <a href="/news/" class="btn btn-primary">お知らせ一覧を見る</a>
-      {% else %}
-        <a href="/news/">お知らせ一覧</a>
-      {% endif %}
+      <a href="/news/">お知らせ一覧</a>
     </p>
   </div>
 </section>
